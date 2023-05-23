@@ -8,3 +8,34 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+:root{
+    --headerHeight: 56px;
+    --footerHeight: 60px;
+}
+
+body{
+    overflow-y: hidden;
+}
+main {
+    margin-top: var(--headerHeight);
+    margin-bottom: var(--footerHeight);
+    height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+    overflow-y: auto;
+    width: 100%;
+}
+footer, header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+header {
+    height: var(--headerHeight);
+    top: 0;
+    z-index: 1000;
+}
+footer {
+    height: var(--footerHeight);
+    bottom: 0;
+}
+
