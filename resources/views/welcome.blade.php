@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Movies</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,8 +16,9 @@
 </head>
 
 <body>
+    <main>
+        @include("header");
 
-    <main class="bg-light">
         <div class="container d-flex justify-content-center align-items-center gap-4 flex-wrap">
             @foreach ($movies as $movie)
             <div class="card" style="width: 18rem;">
@@ -29,8 +30,8 @@
             </div>
             @endforeach
         </div>
-    </main>
 
+    </main>
 </body>
 
 </html>
