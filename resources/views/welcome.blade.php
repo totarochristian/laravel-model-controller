@@ -17,9 +17,9 @@
 
 <body>
     <main>
-        @include("header");
+        @include("header")
 
-        <div class="container d-flex justify-content-center align-items-center gap-4 flex-wrap">
+        <div class="container d-flex justify-content-center align-items-center gap-4 flex-wrap p-4 my-4">
             @foreach ($movies as $movie)
             <div class="card" style="width: 18rem;">
                 <img src="{{ $movie->image }}" class="card-img-top" alt="{{ $movie->title }}">
@@ -31,6 +31,7 @@
             @endforeach
         </div>
 
+        @include("footer")
     </main>
 </body>
 
