@@ -7,7 +7,7 @@
                 <img src="{{ $movie->image }}" class="card-img-top" alt="{{ $movie->title }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ $movie->title }}</h5>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="{{ route('show', ['id' => $movie->id]) }}" class="btn btn-primary">Apri scheda</a>
                 </div>
             </div>
         @endforeach
